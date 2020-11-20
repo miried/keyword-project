@@ -38,6 +38,7 @@ This is where the fun begins. The code that was used to load audio files and tra
 - Use the `mfcc` code from `features.py` to take the [Mel-frequency_cepstrum] of your audio (use `n_cepstra = 26`) to get frames of length-26 feature vectors.
 - The output from `mfcc` needs to be taken in slices of 15 frames, which are then flattened. For details, see `training_models.py`.
 - For reference, compare what your output looks like with what the data looks like in `test_stream`. Plot the `char_out` data taken from the output layer to see how the network responds.
+- see also this [paper].
 
 Check out the training code (*)
 -------------------------------
@@ -56,3 +57,4 @@ Please contact for instructions on how to connect and run.
 [NengoLoihi SDK]: https://www.nengo.ai/nengo-loihi/examples/keyword-spotting.html
 [training]: https://github.com/abr/power_benchmarks/tree/master/training
 [Mel-frequency_cepstrum]: https://en.wikipedia.org/wiki/Mel-frequency_cepstrum
+[paper]: https://arxiv.org/pdf/1812.01739.pdf
