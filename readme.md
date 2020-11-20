@@ -39,8 +39,8 @@ This is where the fun begins. The code that was used to load audio files and tra
 - The output from `mfcc` needs to be taken in slices of 15 frames, which are then flattened. For details, see `training_models.py`.
 - For reference, compare what your output looks like with what the data looks like in `test_stream`. Plot the `char_out` data taken from the output layer to see how the network responds.
 
-Check out the training code
---------------------------
+Check out the training code (*)
+-------------------------------
 
 The [training] code is in a separate github repo. It is done with Tensorflow. Doing more training is quite involving, mainly because you need more training samples.
 - Check out the code and try to understand
