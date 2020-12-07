@@ -40,8 +40,8 @@ This is where the fun begins. The code that was used to load audio files and tra
 - The processed feature array should now have dimensions `(N,390)`. The next step is to feed it to the `nengo_loihi.Simulator` which runs the spiking neural network (your data should be passed like `stream` in [NengoLoihi SDK]).
 - Plot the `char_out` data taken from the output layer to see how the network responds.
 - For reference, compare what your output looks like with what the SNN response looks like for `test_stream`.
-- *How well does it recognise your audio?*
-- _see also this [paper]._
+- **How well does it recognise your audio?**
+- *see also this [paper].*
 
 Check out the training code (*)
 -------------------------------
