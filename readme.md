@@ -37,8 +37,10 @@ This is where the fun begins. The code that was used to load audio files and tra
 - Modify the code to load your own .wav file with librosa (see `training_utils.py` in [training])
 - Use the `mfcc` code from `features.py` to take the [Mel-frequency_cepstrum] of your audio (use `n_cepstra = 26`) to get frames of length-26 feature vectors.
 - The output from `mfcc` needs to be taken in slices of 15 frames, which are then flattened. For details, see `training_models.py`.
-- For reference, compare what your output looks like with what the data looks like in `test_stream`. Plot the `char_out` data taken from the output layer to see how the network responds.
-- see also this [paper].
+- The processed feature array should now have dimensions `(N,390)`. The next step is to feed it to the `nengo_loihi.Simulator` which runs the spiking neural network (your data should be passed like `stream` in [NengoLoihi SDK]).
+- For reference, compare what your output looks like with what the data looks like in `test_stream`.
+- Plot the `char_out` data taken from the output layer to see how the network responds.
+- _see also this [paper]._
 
 Check out the training code (*)
 -------------------------------
